@@ -1,12 +1,58 @@
-﻿<Window x:Class="Prog122_S24_L12_ListView_Sal.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Prog122_S24_L12_ListView_Sal"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+﻿<Window
+    x:Class="Prog122_S24_L12_ListView_Sal.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Prog122_S24_L12_ListView_Sal"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Grid
+        Background="#FF9AF8FF">
+        <Label
+            Content="MainWindow"
+            HorizontalAlignment="Center"
+            Margin="0,10,0,0"
+            VerticalAlignment="Top"
+            FontSize="72" />
+        <Button
+            x:Name="btnOpenNewWindow"
+            Content="Open Window"
+            HorizontalAlignment="Left"
+            Margin="600,393,0,0"
+            VerticalAlignment="Top"
+            Height="31"
+            Width="174"
+            Click="btnOpenNewWindow_Click" />
+        <ListBox
+            x:Name="lbShowNames"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            Margin="37,112,514,84" />
+        <TextBox
+            x:Name="txtName"
+            HorizontalAlignment="Left"
+            Margin="37,374,0,0"
+            TextWrapping="Wrap"
+            Text="TextBox"
+            VerticalAlignment="Top"
+            Width="125"
+            Height="29" />
+        <Button
+            Content="Add Name"
+            HorizontalAlignment="Left"
+            Margin="170,369,0,0"
+            VerticalAlignment="Top"
+            Height="39"
+            Width="116"
+            Click="Button_Click" />
+        <Label
+            x:Name="lblBusinessName"
+            Content="Label"
+            HorizontalAlignment="Center"
+            Margin="0,121,0,0"
+            VerticalAlignment="Top" />
 
     </Grid>
 </Window>
